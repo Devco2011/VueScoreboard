@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Player 1 vs Player 2</h1>
+    <div class="scoreCards">
+      <div class="scoreCard">
+        <h2>0</h2>
+        <button class="decrement">-</button>
+        <button class="increment">+</button>
+      </div>
+    </div>
+    <div class="scoreCards">
+      <div class="scoreCard">
+        <h2>0</h2>
+        <button class="decrement">-</button>
+        <button class="increment">+</button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
-export default {
-  name: "App",
-  components: {
-    HelloWorld
-  }
-};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
