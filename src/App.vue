@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <matchup-title :team1="team1" :team2="team2"></matchup-title>
+    <game-status :team1="team1" :team2="team2"></game-status>
     <div class="box">
       <scorecard
         :score="team1.score"
@@ -19,9 +20,10 @@
 <script>
 import Scorecard from "./components/Scorecard.vue";
 import MatchupTitle from "./components/MatchupTitle.vue";
+import GameStatus from "./components/GameStatus.vue";
 
 export default {
-  components: { MatchupTitle, Scorecard },
+  components: { MatchupTitle, Scorecard, GameStatus },
 
   data() {
     return {
