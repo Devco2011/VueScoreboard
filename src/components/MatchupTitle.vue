@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="title">
     <h1>
       <span :class="{ winning: team1.score > team2.score }">{{
         team1.name
@@ -21,12 +21,15 @@ export default {
 <style scope>
 h1 {
   text-align: center;
-  font-size: 6vw;
+  font-size: 4vw;
   color: #fff;
+  padding-top: 0.2rem;
+  /* margin-bottom: 2rem; */
 }
 p {
   font-size: 3vw;
   color: rgb(250, 110, 3);
+  padding-bottom: 3rem;
 }
 
 .inlineP {
