@@ -30,7 +30,8 @@ header {
   align-content: center;
   text-align: center;
   justify-content: center;
-  color: #fff;
-  font-size: 2rem;
+  color: rgb(250, 110, 3);
+  font-size: 4vw;
+  width: 100%;
 }
 </style>
