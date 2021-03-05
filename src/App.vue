@@ -2,13 +2,15 @@
   <div id="app">
     <matchup-title :team1="team1" :team2="team2"></matchup-title>
     <game-status :team1="team1" :team2="team2"></game-status>
-    <div class="box">
+    <div class="scores">
       <scorecard
+        :team="team1.name"
         :score="team1.score"
         @pointAdded="updateTeamScore(team1, 1)"
         @pointSubtracted="updateTeamScore(team1, -1)"
       ></scorecard>
       <scorecard
+        :team="team2.name"
         :score="team2.score"
         @pointAdded="updateTeamScore(team2, 1)"
         @pointSubtracted="updateTeamScore(team2, -1)"
@@ -51,44 +53,15 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 body {
-  background-color: #03b8fa;
+  background-color: #395e6b;
+  font-family: "Archivo Black", sans-serif;
+  color: rgb(250, 110, 3);
 }
-h1 {
-  text-align: center;
-  font-size: 5rem;
-}
-
-.box {
+.scores {
   display: flex;
-  flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.scoreCard {
-  border: 2px #f4f4f4 solid;
-  font-size: 4rem;
-  margin: 3rem;
-  padding: 1rem;
-}
-
-button {
-  width: 10vw;
-  height: 10vh;
-  font-size: 3rem;
-  color: #fff;
-  margin: 2rem;
-}
-
-.decrement {
-  background: rgb(255, 0, 0, 0.5);
-  border: 2px rgb(255, 0, 0) solid;
-}
-
-.increment {
-  background: rgb(0, 255, 0, 0.5);
-  border: 2px rgb(0, 255, 0) solid;
+  justify-content: space-evenly;
 }
 </style>
