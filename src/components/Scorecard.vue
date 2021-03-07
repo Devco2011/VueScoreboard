@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style>
 .box {
   width: 100%;
   display: flex;
@@ -39,39 +39,40 @@ export default {
 
 .scoreCard {
   text-align: center;
-  border: 1rem #f4f4f4 solid;
+  border: 1.5vw #f4f4f4 solid;
   border-radius: 2px;
   width: 30vw;
-  height: 40vw;
+  /* height: 40vw; */
   /* margin: 2rem; */
-  padding: 1rem;
+  padding: 1vw;
 }
 
 h2 {
   font-size: 7vw;
   color: #fff;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2vw;
 }
 
-/* p .teamName {
+.teamName {
   text-align: center;
-  font-size: 6vh;
-} */
+  font-size: 3vw;
+  margin-bottom: 2vw;
+}
 
 button {
   text-align: center;
   width: 14vw;
-  font-size: 1vw;
+  font-size: 2vw;
   color: #fff;
-  margin: 5px;
+  margin: 1vh;
   padding: 0.5rem;
 }
 
 .decrement {
   background: rgb(255, 0, 0, 0.5);
   border: 2px rgb(255, 0, 0) solid;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .decrement:hover {
   background: rgb(255, 0, 0, 0.9);

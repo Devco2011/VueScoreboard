@@ -1,7 +1,7 @@
 <template>
   <header>
-    <p v-if="gameIsTied">The game is currently tied</p>
-    <p v-else>{{ gameLeaderDisplay }}</p>
+    <p class="gameStatus" v-if="gameIsTied">The game is currently tied</p>
+    <p class="gameStatus" v-else>{{ gameLeaderDisplay }}</p>
   </header>
 </template>
 
@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style>
 header {
   align-content: center;
   text-align: center;
@@ -33,5 +33,10 @@ header {
   color: rgb(250, 110, 3);
   font-size: 4vw;
   width: 100%;
+}
+.gameStatus {
+  font-size: 3vw;
+  color: rgb(250, 110, 3);
+  padding-bottom: 3rem;
 }
 </style>

@@ -18,22 +18,23 @@ export default {
 };
 </script>
 
-<style scope>
+<style>
 h1 {
   text-align: center;
   font-size: 4vw;
   color: #fff;
   padding-top: 0.2rem;
-  /* margin-bottom: 2rem; */
+  margin-bottom: 2rem;
 }
-p {
+/* p {
   font-size: 3vw;
   color: rgb(250, 110, 3);
   padding-bottom: 3rem;
-}
+} */
 
 .inlineP {
   display: inline-block;
+  color: rgb(250, 110, 3);
 }
 
 .winning {

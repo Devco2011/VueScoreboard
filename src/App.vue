@@ -85,7 +85,7 @@ body {
   color: rgb(250, 110, 3);
 }
 .scoreboardTitle {
-  padding-top: 3rem;
+  padding: 3rem;
   font-size: 2vh;
   text-align: center;
 }
